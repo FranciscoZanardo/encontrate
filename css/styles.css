@@ -1,834 +1,860 @@
-/* 
-COLORES
-$persian-rose: #e847aaff;
-$rose-pink: #ff55c0ff;
-$rose-pink-2: #ff74d4ff;
-$persian-pink: #ff96d9ff;
-$lavender-pink: #ffb8deff; 
-un marroncito #D6898C
-rosita apstel #FBB7C0
-naranjita salmon #FD9D94
-*/
-@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Dancing+Script:wght@400..700&family=Whisper&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Dancing+Script:wght@400..700&display=swap'); 
-
+@import url("https://fonts.googleapis.com/css2?family=Bitter&family=Dancing+Script:wght@400..700&family=Whisper&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Dancing+Script:wght@400..700&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    max-width: 100%;
-    /* border: 1px solid red; */
-}
-html {
-    font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
 }
 
-header {
+@media screen and (min-width: 1024px) {
+  body article {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  body header {
     background-color: #FF9CCC;
-}
-a {
-    text-decoration: none;
-}
-ul li {
-    list-style-type: none;
-}
-.parallax {
-    background-color: #FBB7C0;
-}
-
-/* ----------footer---------- */
-footer {
-    background-color: #FF9CCC;
-}
-footer div a {
-    color: black;
-}
-footer nav a {
-    color: black;
-}
-.galeria {
-    display: grid;
+    padding: 0.1rem;
+  }
+  body header .navbar-expand-lg {
+    display: none;
+  }
+  body header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: center;
-    grid-gap: 1rem;
-    margin: 1rem 10rem 0rem 10rem;
-}
-.galeria img {
+  }
+  body header nav ul li a {
+    font-size: 2rem;
+    color: black;
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+  body header nav ul li a svg {
+    margin-right: 0.3rem;
+  }
+  body header nav ul li .bi-cup-hot {
+    margin-bottom: 0.4rem;
+  }
+  body header nav ul li .bi-cake {
+    margin-bottom: 0.3rem;
+  }
+  body header nav ul li .bi-shop {
+    margin-bottom: 0.3rem;
+  }
+  body .parallax {
+    background-color: #FBB7C0;
+  }
+  body .articulo {
+    display: flex;
+    flex-direction: row;
+  }
+  body .articulo div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .articulo div img {
+    width: 600px;
+    border: 2px solid floralwhite;
+    margin-top: 5rem;
+    margin-right: 185%;
+  }
+  body .articulo div iframe {
+    margin-top: 1rem;
+    border-radius: 1rem;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 1%;
-}
-
-/* ----------mobile----------- */
-@media screen and (min-width: 30px) and (max-width: 767px) {
-    article {
-        margin-left: 5rem;
-        margin-right: 5rem;
-    }
-    .parallax {
-        background-color: #FBB7C0;
-        padding-bottom: 0.5rem;
-    }
-    header nav ul {
-        display: none;
-    }
-    .navbar-brand {
-        width: 12%;
-        height: 12%; 
-        order: 1;
-    }
-    .bi-cup-hot {
-        margin-left: 0.4rem;
-    }
-    .bi-cake{
-        margin-left: 0.4rem;
-    }
-    .bi-shop {
-        margin-left: 0.4rem;
-    }
-    .bi-person-vcard {
-        margin-left: 0.4rem;
-    }
-    .bi-calendar-date {
-        margin-left: 0.4rem;
-    }
-
-    /* body */
-    h1 {
-        font-family: "Dancing Script", cursive;
-        font-optical-sizing: auto;
-        font-weight: 500;
-        font-style: normal;
-        color: #ff55c0ff;
-        font-size: 4rem;
-        text-align: center;
-        margin-bottom: 0%;
-    }
-    h2 {
-        font-family: "Dancing Script", cursive;
-        font-optical-sizing: auto;
-        font-weight: 600;
-        font-style: normal;
-        text-align: center;
-        font-size: 3rem;
-        margin-bottom: 0.5rem;
-    }
-    h3 {
-        font-family: "Dancing Script", cursive;
-        font-optical-sizing: auto;
-        font-weight: 600;
-        font-style: normal;
-        text-align: center;
-        font-size: 2.5rem;
-        margin: 0%;
-    }
-    p { 
-        font-size: 1.4rem;
-        font-family: "Bitter", serif;
-        font-optical-sizing: auto;
-        font-weight: 400;
-        font-style: normal;
-        text-align: center;
-        margin-bottom: 1rem;
-    }
-    .logo-inicio {
+    margin-bottom: 2rem;
+    margin-right: 185%;
+  }
+  body .articulo div p {
+    width: 50%;
+    margin-top: 2rem;
+  }
+  body .articulo div h2 {
+    margin: 0 auto;
+    margin-bottom: 5px;
+    font-size: 5rem;
+    margin-top: 4rem;
+  }
+  body .articulo div a {
+    margin-left: 2rem;
+    font-size: 2rem;
+  }
+  body h2 {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    font-size: 4rem;
+    margin: 0%;
+  }
+  body h3 {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    font-size: 4rem;
+    margin: 0%;
+  }
+  body p {
+    font-size: 2rem;
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+  }
+  body main h1 {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #7D3158;
+    font-size: 6rem;
+    text-align: center;
+    margin-bottom: 0%;
+  }
+  body main .logo-inicio img {
+    width: 100px;
+    height: 100px;
+  }
+  body main .logo-inicio h1 {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    padding-right: 14rem;
+  }
+  body main .logo-inicio .debajo-del-titulo {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 3rem;
+  }
+  body main .logo-inicio #carouselExampleIndicators {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  body main .separacion {
+    display: flex;
+    flex-direction: column;
+  }
+  body main .derecha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2A5AA;
+    margin-bottom: 1rem;
+  }
+  body main .derecha img {
+    width: 30%;
+    height: 30%;
+    border: 3px solid floralwhite;
+  }
+  body main .derecha div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body main .derecha p {
+    width: 80%;
+    margin-right: 10%;
+    margin-top: 1rem;
+  }
+  body main .izquierda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2A5AA;
+    margin-bottom: 1rem;
+  }
+  body main .izquierda img {
+    width: 30%;
+    height: 30%;
+    order: 1;
+    border: 3px solid floralwhite;
+  }
+  body main .izquierda div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body main .izquierda p {
+    width: 80%;
+    margin-right: 10%;
+    margin-top: 1rem;
+  }
+  body main .galeria {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  body main .galeria-foto-uno {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  body main .galeria-foto-dos {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  body main .galeria-foto-tres {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+  body main .galeria-foto-cuatro {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  body main .galeria-foto-cinco {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  body main .logo-inicio {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    }
-    .logo-inicio img {
-        display: none;
-    }
-    /* index */
-    #carouselExampleIndicators {
-        margin-left: 2rem;
-        margin-right: 2rem;
-        border: 2px solid floralwhite;
-    }
-    .debajo-del-titulo {
-        font-size: 1.5rem;
-        text-align: center;
-        margin: 0 1rem 0.5rem 1rem;
-    }
-    .articulo div img {
-        width: 600px;
-        border: 2px solid rgb(255, 255, 255);
-        margin-top: 1rem;
-    }
-    article div iframe{
-        margin-top: 1rem;
-        border-radius: 1rem;
-        width: 100%;
-        margin-bottom: 2rem;
-    }
-    .articulo p {
-        width: 100%;
-    }
-    /* para tomar/comer */
-    .derecha {
-        background-color: #F2A5AA;
-        text-align: center;
-    }
-    .derecha img {
-        border: 3px solid floralwhite;
-        width: 100%;
-    }
-    .izquierda {
-        background-color: #F2A5AA;
-        margin-top: 1rem;
-    }
-    .izquierda img {
-        border: 3px solid floralwhite;
-    }
-    .izquierda p {
-        margin-top: 1rem;
-        width: 100%;
-    }
-    /* quiernes somos */
-    .galeria {
-        grid-template-columns: 1fr ;
-    }
-    .galeria-foto-uno {
-        grid-column: 1/2;
-    }
-    .galeria-foto-dos {
-        grid-column: 1/2;
-    }
-    .galeria-foto-tres {
-        grid-column: 1/2;
-    }
-    .galeria-foto-cuatro {
-        grid-column: 1/2;
-    }
-    .galeria-foto-cinco {
-        grid-column: 1/2;
-    }
-    .galeria img {
-        border: 2px solid floralwhite;
-    }
-    /* nuestros eventos */
-        .eventos {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 1rem;
-    }
-    .eventos article {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border: 3px solid white;
-        background-color: #F2A5AA;
-        margin-bottom: 1rem;
-    }
-    .eventos p {
-        width: 95%;
-        margin: 2rem 2rem 0.5rem 2rem;
-    }
-    .eventos img {
-        padding: 0rem 0.5rem 0rem 0.5rem;
-    }
-    section form {
-        font-size: 1.5rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    form label {
-        margin: 1rem 0rem 0.2rem 0rem ;
-    }
-    /* ---footer--- */
-    .logo {
-        width: 50px;
-        height: 50px;
-    }
-    footer {
-        background-color: #FF9CCC;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .logo-pie {
-        display: flex;
-        align-items: center;
-    }
-    footer p {
-        font-size: 1rem;
-        margin-left: 2px;
-    }
-    footer p {
-        margin-top: 1.1rem;
-    }
-    footer svg {
-        width: 20px;
-        height: 20px;
-        margin-left: 3rem;
-    }
-    footer nav a {
-        display: none;
-    }
+  }
+  body main p {
+    text-align: center;
+  }
+  body main .eventos {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+  }
+  body main .eventos article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid floralwhite;
+    background-color: #F2A5AA;
+    border-radius: 5%;
+  }
+  body main .eventos img {
+    margin-top: 1rem;
+    padding: 0rem 1rem 0rem 1rem;
+    border-radius: 3%;
+  }
+  body main .eventos p {
+    font-size: 2rem;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 2rem 0.5rem 2rem;
+  }
+  body main section form {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body main section label {
+    margin: 1rem 0rem 0.2rem 0rem;
+  }
+  footer {
+    background-color: #FF9CCC;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer div a {
+    margin-right: 8rem;
+  }
+  footer div p {
+    font-size: 3rem;
+    margin-left: 2px;
+    margin-top: 1.5rem;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+  footer nav a {
+    margin-right: 3rem;
+    color: black;
+    text-decoration: none;
+  }
+  footer .logo-pie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .logo {
+    width: 100px;
+    height: 100px;
+  }
+  footer a {
+    font-size: 2rem;
+  }
+  footer .bi-instagram:hover {
+    text-decoration: none;
+    color: #3B1E79;
+  }
+  footer .bi-whatsapp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background-color: green;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  footer .bi-whatsapp:hover {
+    text-decoration: none;
+    color: green;
+    background-color: #fff;
+  }
 }
-
-/* --------tablet-------- */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  body article {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  body header nav ul {
+    display: none;
+  }
+  body header nav div .navbar-brand {
+    width: 12%;
+    height: 12%;
+    order: 1;
+  }
+  body header nav div .navbar-nav {
+    font-size: 1.5rem;
+  }
+  body header nav div ul .bi-shop {
+    margin-left: 0.4rem;
+    margin-bottom: 0.3rem;
+  }
+  body header nav div ul .bi-cup-hot {
+    margin-left: 0.4rem;
+    margin-bottom: 0.3rem;
+  }
+  body header nav div ul .bi-cake {
+    margin-left: 0.4rem;
+    margin-bottom: 0.3rem;
+  }
+  body header nav div ul .bi-person-vcard {
+    margin-left: 0.4rem;
+  }
+  body header nav div ul .bi-calendar-date {
+    margin-left: 0.4rem;
+  }
+  body .parallax {
+    background-color: #FBB7C0;
+    padding-bottom: 0.5rem;
+  }
+  body .parallax .articulo div img {
+    width: 600px;
+    border: 2px solid floralwhite;
+    margin-top: 1rem;
+  }
+  body .parallax .articulo div iframe {
+    margin-top: 1rem;
+    border-radius: 1rem;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  body .parallax .articulo p {
+    width: 100%;
+  }
+  body h2 {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  body h3 {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0%;
+  }
+  body p {
+    font-size: 1.4rem;
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  body main h1 {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #7D3158;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 0%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  body main .logo-inicio img {
+    display: none;
+  }
+  body main #carouselExampleIndicators {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border: 2px solid floralwhite;
+  }
+  body main .debajo-del-titulo {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0 1rem 0.5rem 1rem;
+  }
+  body main .derecha {
+    background-color: #F2A5AA;
+    text-align: center;
+  }
+  body main .derecha img {
+    border: 3px solid floralwhite;
+    width: 100%;
+  }
+  body main .izquierda {
+    background-color: #F2A5AA;
+    margin-top: 1rem;
+  }
+  body main .izquierda img {
+    border: 3px solid floralwhite;
+  }
+  body main .izquierda p {
+    margin-top: 1rem;
+    width: 100%;
+  }
+  body main .galeria {
+    grid-template-columns: 1fr;
+  }
+  body main .galeria-foto-uno {
+    grid-column: 1/2;
+  }
+  body main .galeria .galeria-foto-dos {
+    grid-column: 1/2;
+  }
+  body main .galeria .galeria-foto-tres {
+    grid-column: 1/2;
+  }
+  body main .galeria .galeria-foto-cuatro {
+    grid-column: 1/2;
+  }
+  body main .galeria .galeria-foto-cinco {
+    grid-column: 1/2;
+  }
+  body main .galeria img {
+    border: 2px solid floralwhite;
+  }
+  body main .eventos {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  body main .eventos article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid floralwhite;
+    background-color: #F2A5AA;
+    margin-bottom: 1rem;
+  }
+  body main .eventos p {
+    width: 95%;
+    margin: 2rem 2rem 0.5rem 2rem;
+  }
+  body main .eventos img {
+    padding: 0rem 0.5rem 0rem 0.5rem;
+  }
+  body main section form {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body main section form label {
+    margin: 1rem 0rem 0.2rem 0rem;
+  }
+  footer {
+    background-color: #FF9CCC;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer p {
+    font-size: 1rem;
+    margin-left: 2px;
+    margin-top: 1.1rem;
+  }
+  footer svg {
+    width: 20px;
+    height: 20px;
+    margin-left: 3rem;
+  }
+  footer .logo-pie {
+    display: flex;
+    align-items: center;
+  }
+  footer .logo {
+    width: 50px;
+    height: 50px;
+  }
+  footer nav a {
+    display: none;
+  }
+  footer div .bi-instagram {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    bottom: 55px;
+    right: 10px;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: floralwhite;
+    border-radius: 13px;
+    text-align: center;
+  }
+  footer div .bi-whatsapp {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    bottom: 10px;
+    right: 10px;
+    background-color: green;
+    color: floralwhite;
+    border-radius: 50px;
+    text-align: center;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    article {
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
-    }
-    .parallax {
-        background-color: #FBB7C0;
-    }
-    header nav ul {
-        display: none;
-    }
-    .navbar-brand {
-        width: 7%;
-        height: 7%; 
-        order: 1;
-    }
-    .bi-cup-hot {
-        margin-left: 0.4rem;
-    }
-    .bi-cake{
-        margin-left: 0.4rem;
-    }
-    .bi-shop {
-        margin-left: 0.4rem;
-    }
-    .bi-person-vcard {
-        margin-left: 0.4rem;
-    }
-    .bi-calendar-date {
-        margin-left: 0.4rem;
-    }
-
-    /* ----body---- */
-    main h1 {
-        font-family: "Dancing Script", cursive;
-        font-optical-sizing: auto;
-        font-weight: 500;
-        font-style: normal;
-        color: #7D3158;
-        font-size: 6rem;
-        text-align: center;
-        margin-bottom: 0%;
-    }
-    h2 {
-        font-family: "Dancing Script", cursive;
-        font-optical-sizing: auto;
-        font-weight: 600;
-        font-style: normal;
-        text-align: center;
-        font-size: 4rem;
-        margin: 0%;
-    }
-    h3 {
-        font-family: "Dancing Script", cursive;
-        font-optical-sizing: auto;
-        font-weight: 600;
-        font-style: normal;
-        text-align: center;
-        font-size: 3rem;
-        margin: 0%;
-    }
-    p { 
-        font-size: 2rem;
-        font-family: "Bitter", serif;
-        font-optical-sizing: auto;
-        font-weight: 400;
-        font-style: normal;
-        text-align: justify;
-    }
-    .logo-inicio img {
-display: none;
-    }   
-    .debajo-del-titulo {
-        font-size: 1.5rem;
-        text-align: center;
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-bottom: 3rem;
-    }
-
-    /* ---inicio--- */
-    #carouselExampleIndicators {
-        margin-left: 3rem;
-        margin-right: 3rem;
-        border: 2px solid floralwhite;
-    }
-    .articulo {
-        display: flex;
-        flex-direction: row;
-    }
-    .articulo div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .articulo div img {
-        width: 1200px;
-        border: 2px solid rgb(255, 255, 255);
-        margin-top: 5rem;
-        margin-left: 2rem;
-    }
-    article div iframe{
-        margin-top: 1rem;
-        border-radius: 1rem;
-        width: 100%;
-        margin-bottom: 2rem;
-        margin-left: 2rem;
-    }
-    .articulo div p {
-        width: 100%;
-    }
-    .articulo h2 {
-        font-size: 5rem;
-    }
-
-    /* -------para tomar/comer-------- */
-    .separacion {   
-        display: flex;  
-        flex-direction: column;
-    }
-    .derecha {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #F2A5AA;
-        margin-bottom: 1rem;
-    }
-    .derecha img {
-        width: 30%;
-        height: 30%;
-        border: 3px solid floralwhite;
-        margin-left: 3rem;
-    }
-    .derecha div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .derecha p {
-        width:90%;
-        margin-top: 1rem;
-    }
-    .izquierda {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #F2A5AA;
-        margin-bottom: 1rem;
-    }
-    .izquierda img {
-        width: 30%;
-        height: 30%;
-        order: 1;
-        border: 3px solid floralwhite;
-        margin-right: 3rem;
-    }
-    .izquierda div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .izquierda p {
-        width: 90%;
-        margin-top: 1rem;
-    }
-    /* -----Quienes somos----- */
-    .galeria {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        padding-bottom: 1rem;
-    }
-    .galeria-foto-uno {
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-    .galeria-foto-dos {
-        grid-column: 3/4;
-        grid-row: 1/2;
-    }
-    .galeria-foto-tres {
-        grid-column: 2/3;
-        grid-row: 1/3;
-    }
-    .galeria-foto-cuatro {
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-    .galeria-foto-cinco {
-        grid-column: 3/4;
-        grid-row: 2/3;
-    }
-    .logo-inicio  {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    main p {
-        text-align: center;
-    }
-    /* nuestros eventos */
-    .eventos {
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 1rem;
-    }
-    .eventos article {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border: 3px solid white;
-        background-color: #F2A5AA;
-    }
-    .eventos img {
-        margin-top: 1rem;
-        padding: 0rem 0.5rem 0rem 0.5rem;
-    }
-    .eventos p {
-        font-size: 1.7rem;
-        width: 95%;
-        margin: 2rem 2rem 0.5rem 2rem;
-    }
-    section form {
-        font-size: 2rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 1rem;
-    }
-    form label {
-        margin: 1rem 0rem 0.2rem 0rem ;
-    }
-    /* ----footer----- */
-    footer {
-        background-color: #FF9CCC;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .logo-pie {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    footer div a {
-    margin-right: 8rem;
-    }
-    footer nav a {
-        margin-right: 3rem;
-        color: black;
-    }
-    .logo {
-        width: 100px;
-        height: 100px;
-    }
-    footer div p {
-        font-size: 1.5rem;
-        margin-left: 2px;
-        margin-top: 1.5rem;
-    }
-    footer a {
-        font-size: 2rem;
-    }
+  body article {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  body header nav ul {
+    display: none;
+  }
+  body header nav div .navbar-brand {
+    width: 7%;
+    height: 7%;
+    order: 1;
+  }
+  body header nav div .navbar-nav {
+    font-size: 1.5rem;
+  }
+  body header nav div ul .bi-shop {
+    margin-left: 0.4rem;
+    margin-bottom: 0.3rem;
+  }
+  body header nav div ul .bi-cup-hot {
+    margin-left: 0.4rem;
+    margin-bottom: 0.3rem;
+  }
+  body header nav div ul .bi-cake {
+    margin-left: 0.4rem;
+    margin-bottom: 0.3rem;
+  }
+  body header nav div ul .bi-person-vcard {
+    margin-left: 0.4rem;
+  }
+  body header nav div ul .bi-calendar-date {
+    margin-left: 0.4rem;
+  }
+  body .parallax {
+    background-color: #FBB7C0;
+  }
+  body .parallax .articulo {
+    display: flex;
+    flex-direction: row;
+  }
+  body .parallax .articulo div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .parallax .articulo div img {
+    width: 1200px;
+    border: 2px solid floralwhite;
+    margin-top: 5rem;
+    margin-left: 2rem;
+  }
+  body .parallax .articulo div iframe {
+    margin-top: 1rem;
+    border-radius: 1rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+  }
+  body .parallax .articulo div p {
+    width: 100%;
+  }
+  body .parallax .articulo div h2 {
+    font-size: 5rem;
+  }
+  body h2 {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    font-size: 4rem;
+    margin: 0%;
+  }
+  body h3 {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    font-size: 3rem;
+    margin: 0%;
+  }
+  body p {
+    font-size: 2rem;
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+  }
+  body main h1 {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #7D3158;
+    font-size: 6rem;
+    text-align: center;
+    margin-bottom: 0%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  body main .logo-inicio img {
+    display: none;
+  }
+  body main .debajo-del-titulo {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 3rem;
+  }
+  body main #carouselExampleIndicators {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    border: 2px solid floralwhite;
+  }
+  body main .separacion {
+    display: flex;
+    flex-direction: column;
+  }
+  body main .derecha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2A5AA;
+    margin-bottom: 1rem;
+  }
+  body main .derecha img {
+    width: 30%;
+    height: 30%;
+    border: 3px solid floralwhite;
+    margin-left: 3rem;
+  }
+  body main .derecha div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body main .derecha p {
+    width: 90%;
+    margin-top: 1rem;
+  }
+  body main .izquierda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2A5AA;
+    margin-bottom: 1rem;
+  }
+  body main .izquierda img {
+    width: 30%;
+    height: 30%;
+    order: 1;
+    border: 3px solid floralwhite;
+    margin-right: 3rem;
+  }
+  body main .izquierda div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body main .izquierda p {
+    width: 90%;
+    margin-top: 1rem;
+  }
+  body main .galeria {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-bottom: 1rem;
+  }
+  body main .galeria-foto-uno {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  body main .galeria-foto-dos {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  body main .galeria-foto-tres {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+  body main .galeria-foto-cuatro {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  body main .galeria-foto-cinco {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  body main .logo-inicio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  body main p {
+    text-align: center;
+  }
+  body main .eventos {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+  }
+  body main .eventos article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid floralwhite;
+    background-color: #F2A5AA;
+  }
+  body main .eventos img {
+    margin-top: 1rem;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+  }
+  body main .eventos p {
+    font-size: 1.7rem;
+    width: 95%;
+    margin: 2rem 2rem 0.5rem 2rem;
+  }
+  body main section form {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
+  body main section form label {
+    margin: 1rem 0rem 0.2rem 0rem;
+  }
+  footer {
+    background-color: #FF9CCC;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer .logo-pie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .logo {
+    width: 100px;
+    height: 100px;
+  }
+  footer div .bi-instagram {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    bottom: 55px;
+    right: 10px;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: floralwhite;
+    border-radius: 13px;
+    text-align: center;
+  }
+  footer div .bi-whatsapp {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    bottom: 10px;
+    right: 10px;
+    background-color: green;
+    color: floralwhite;
+    border-radius: 50px;
+    text-align: center;
+  }
+  footer div p {
+    font-size: 3rem;
+    margin-left: 2px;
+    margin-top: 1.5rem;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+  footer nav a {
+    margin-right: 6rem;
+    color: black;
+    font-size: 2rem;
+    text-decoration: none;
+  }
 }
-
-/* --------desktop-------- */
-@media screen and (min-width: 1024px) {
-    article {
-        margin-left: 5rem;
-        margin-right: 5rem;
-    }
-    .navbar-expand-lg {
-        display: none;
-    }
-    header {
-        background-color: #FF9CCC;
-        padding: 0.1rem;
-    }
-    header nav ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;    
-    }
-    header nav ul li a {
-        font-size: 2rem;
-        color: black;
-        display: flex;
-        align-items: center;
-        margin-top: 0.5rem;
-    }
-    header nav ul li a svg { 
-        margin-right: 0.3rem;
-    }
-    .bi-cup-hot {
-        margin-bottom: 0.4rem;
-    }
-    .bi-cake{
-        margin-bottom: 0.3rem;
-    }
-    .bi-shop {
-        margin-bottom: 0.3rem;
-    }
-
-    /* ----body---- */
-    main h1 {
-        font-family: "Dancing Script", cursive;
-        font-optical-sizing: auto;
-        font-weight: 500;
-        font-style: normal;
-        color: #7D3158;
-        font-size: 6rem;
-        text-align: center;
-        margin-bottom: 0%;
-    }
-    h2 {
-        font-family: "Dancing Script", cursive;
-        font-optical-sizing: auto;
-        font-weight: 600;
-        font-style: normal;
-        text-align: center;
-        font-size: 4rem;
-        margin: 0%;
-    }
-    h3 {
-        font-family: "Dancing Script", cursive;
-        font-optical-sizing: auto;
-        font-weight: 600;
-        font-style: normal;
-        text-align: center;
-        font-size: 4rem;
-        margin: 0%;
-    }
-    p { 
-        font-size: 2rem;
-        font-family: "Bitter", serif;
-        font-optical-sizing: auto;
-        font-weight: 400;
-        font-style: normal;
-        text-align: justify;
-    }
-
-    .logo-inicio img {
-        width: 100px;
-        height: 100px;
-    }   
-    .logo-inicio h1 {
-        display: flex;
-        flex-grow: 1;
-        justify-content: center;
-        padding-right: 14rem;
-    }
-    .debajo-del-titulo {
-        font-size: 1.5rem;
-        text-align: center;
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-bottom: 3rem;
-    }
-    /* ---inicio--- */
-    #carouselExampleIndicators {
-        margin-left: 5rem;
-        margin-right: 5rem;
-    }
-    .articulo {
-        display: flex;
-        flex-direction: row;
-    }
-    .articulo div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .articulo div img {
-        width: 600px;
-        border: 2px solid rgb(255, 255, 255);
-        margin-top: 5rem;
-        margin-right: 185%;
-    }
-    article div iframe{
-        margin-top: 1rem;
-        border-radius: 1rem;
-        width: 100%;
-        margin-bottom: 2rem;
-        margin-right: 185%;
-    }
-    .articulo div p {
-        width: 50%;
-        margin-top: 2rem;
-    }
-    .articulo h2 {
-        margin: 0 auto;
-        margin-bottom: 5px;
-        font-size: 5rem;
-        margin-top: 4rem;
-    }
-    article ul li {
-        font-size: 20px;
-    }
-    .articulo div a {
-        margin-left: 2rem;
-        font-size: 2rem;
-    }
-    /* -------para tomar/comer-------- */
-    .separacion {   
-        display: flex;  
-        flex-direction: column;
-    }
-    .derecha {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #F2A5AA;
-        margin-bottom: 1rem;
-    }
-    .derecha img {
-        width: 30%;
-        height: 30%;
-        border: 3px solid floralwhite;
-    }
-    .derecha div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .derecha p {
-        width: 80%;
-        margin-right: 10%;
-        margin-top: 1rem;
-    }
-    .izquierda {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #F2A5AA;
-        margin-bottom: 1rem;
-    }
-    .izquierda img {
-        width: 30%;
-        height: 30%;
-        order: 1;
-        border: 3px solid floralwhite;
-    }
-    .izquierda div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .izquierda p {
-        width: 80%;
-        margin-right: 10%;
-        margin-top: 1rem;
-    }
-    /* -----Quienes somos----- */
-    .galeria {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-    .galeria-foto-uno {
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-    .galeria-foto-dos {
-        grid-column: 3/4;
-        grid-row: 1/2;
-    }
-    .galeria-foto-tres {
-        grid-column: 2/3;
-        grid-row: 1/3;
-    }
-    .galeria-foto-cuatro {
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-    .galeria-foto-cinco {
-        grid-column: 3/4;
-        grid-row: 2/3;
-    }
-    .logo-inicio  {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    main p {
-        text-align: center;
-    }
-    /* nuestros eventos */
-    .eventos {
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 1rem;
-    }
-    .eventos article {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border: 3px solid white;
-        background-color: #F2A5AA;
-        border-radius: 5%;
-    }
-    .eventos img {
-        margin-top: 1rem;
-        padding: 0rem 1rem 0rem 1rem;
-        border-radius: 3%;
-    }
-    .eventos p {
-        font-size: 2rem;
-        width: 95%;
-        display: flex;
-        justify-content: center;
-        margin: 2rem 2rem 0.5rem 2rem;
-    }
-    section form {
-        font-size: 2rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    form label {
-        margin: 1rem 0rem 0.2rem 0rem ;
-    }
-    /* ----footer----- */
-    footer {
-        background-color: #FF9CCC;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .logo-pie {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    footer div a {
-    margin-right: 8rem;
-    }
-    footer nav a {
-        margin-right: 3rem;
-        color: black;
-    }
-    .logo {
-        width: 100px;
-        height: 100px;
-    }
-    footer div p {
-        font-size: 3rem;
-        margin-left: 2px;
-        margin-top: 1.5rem;
-        font-family: "Dancing Script", cursive;
-        font-optical-sizing: auto;
-        font-weight: 500;
-        font-style: normal;
-    }
-    footer a {
-        font-size: 2rem;
-    }
-    .bi-whatsapp {
-        display: none;
-    }
+html {
+  font-size: 62.5%;
 }
+html body header {
+  background-color: #FF9CCC;
+}
+html body header li {
+  list-style-type: none;
+}
+html body main .galeria {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 1rem;
+  margin: 1rem 10rem 0rem 10rem;
+}
+html body main .galeria img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1%;
+}
+html body footer {
+  background-color: #FF9CCC;
+}
+html body footer div a {
+  color: black;
+}
+html body footer div nav a {
+  color: black;
+}/*# sourceMappingURL=styles.css.map */
