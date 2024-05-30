@@ -7,10 +7,6 @@
 }
 
 @media screen and (min-width: 1024px) {
-  body article {
-    margin-left: 5rem;
-    margin-right: 5rem;
-  }
   body header {
     background-color: #FF9CCC;
     padding: 0.1rem;
@@ -35,6 +31,10 @@
   body header nav ul li a svg {
     margin-right: 0.3rem;
   }
+  body header nav ul li a:hover {
+    text-decoration: none;
+    color: floralwhite;
+  }
   body header nav ul li .bi-cup-hot {
     margin-bottom: 0.4rem;
   }
@@ -44,44 +44,9 @@
   body header nav ul li .bi-shop {
     margin-bottom: 0.3rem;
   }
-  body .parallax {
-    background-color: #FBB7C0;
-  }
-  body .articulo {
-    display: flex;
-    flex-direction: row;
-  }
-  body .articulo div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  body .articulo div img {
-    width: 600px;
-    border: 2px solid floralwhite;
-    margin-top: 5rem;
-    margin-right: 185%;
-  }
-  body .articulo div iframe {
-    margin-top: 1rem;
-    border-radius: 1rem;
-    width: 100%;
-    margin-bottom: 2rem;
-    margin-right: 185%;
-  }
-  body .articulo div p {
-    width: 50%;
-    margin-top: 2rem;
-  }
-  body .articulo div h2 {
-    margin: 0 auto;
-    margin-bottom: 5px;
-    font-size: 5rem;
-    margin-top: 4rem;
-  }
-  body .articulo div a {
-    margin-left: 2rem;
-    font-size: 2rem;
+  body article {
+    margin-left: 5rem;
+    margin-right: 5rem;
   }
   body h2 {
     font-family: "Dancing Script", cursive;
@@ -128,17 +93,19 @@
     flex-grow: 1;
     justify-content: center;
     padding-right: 14rem;
+    order: 1;
   }
-  body main .logo-inicio .debajo-del-titulo {
+  body main #carouselExampleIndicators {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border: 4px solid floralwhite;
+  }
+  body main .debajo-del-titulo {
     font-size: 1.5rem;
     text-align: center;
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 3rem;
-  }
-  body main .logo-inicio #carouselExampleIndicators {
-    margin-left: 5rem;
-    margin-right: 5rem;
   }
   body main .separacion {
     display: flex;
@@ -149,7 +116,7 @@
     justify-content: center;
     align-items: center;
     background-color: #F2A5AA;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
   }
   body main .derecha img {
     width: 30%;
@@ -171,7 +138,7 @@
     justify-content: center;
     align-items: center;
     background-color: #F2A5AA;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
   }
   body main .izquierda img {
     width: 30%;
@@ -192,6 +159,7 @@
   body main .galeria {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    padding-bottom: 2rem;
   }
   body main .galeria-foto-uno {
     grid-column: 1/2;
@@ -255,17 +223,56 @@
   body main section label {
     margin: 1rem 0rem 0.2rem 0rem;
   }
-  footer {
+  body .parallax {
+    background-color: #FBB7C0;
+  }
+  body .articulo {
+    display: flex;
+    flex-direction: row;
+  }
+  body .articulo div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .articulo div img {
+    width: 600px;
+    border: 2px solid floralwhite;
+    margin-top: 5rem;
+    margin-right: 185%;
+  }
+  body .articulo div iframe {
+    margin-top: 1rem;
+    border-radius: 1rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    margin-right: 185%;
+  }
+  body .articulo div p {
+    width: 50%;
+    margin-top: 2rem;
+  }
+  body .articulo div h2 {
+    margin: 0 auto;
+    margin-bottom: 5px;
+    font-size: 5rem;
+    margin-top: 4rem;
+  }
+  body .articulo div a {
+    margin-left: 2rem;
+    font-size: 2rem;
+  }
+  body footer {
     background-color: #FF9CCC;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
-  footer div a {
+  body footer div a {
     margin-right: 1rem;
   }
-  footer div p {
+  body footer div p {
     font-size: 3rem;
     margin-left: 2px;
     margin-top: 1.5rem;
@@ -274,23 +281,23 @@
     font-weight: 500;
     font-style: normal;
   }
-  footer .logo-pie {
+  body footer .logo-pie {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  footer .logo {
+  body footer .logo {
     width: 100px;
     height: 100px;
   }
-  footer a {
+  body footer a {
     font-size: 0.5rem;
   }
-  footer .bi-instagram:hover {
+  body footer .bi-instagram:hover {
     text-decoration: none;
     color: #3B1E79;
   }
-  footer .bi-whatsapp {
+  body footer .bi-whatsapp {
     position: fixed;
     width: 55px;
     height: 55px;
@@ -302,12 +309,12 @@
     border-radius: 100px;
     text-align: center;
   }
-  footer .bi-whatsapp:hover {
+  body footer .bi-whatsapp:hover {
     text-decoration: none;
     color: green;
     background-color: #fff;
   }
-  footer .bi-instagram {
+  body footer .bi-instagram {
     position: fixed;
     width: 55px;
     height: 55px;
@@ -353,24 +360,6 @@
   }
   body header nav div ul .bi-calendar-date {
     margin-left: 0.4rem;
-  }
-  body .parallax {
-    background-color: #FBB7C0;
-    padding-bottom: 0.5rem;
-  }
-  body .parallax .articulo div img {
-    width: 600px;
-    border: 2px solid floralwhite;
-    margin-top: 1rem;
-  }
-  body .parallax .articulo div iframe {
-    margin-top: 1rem;
-    border-radius: 1rem;
-    width: 100%;
-    margin-bottom: 2rem;
-  }
-  body .parallax .articulo p {
-    width: 100%;
   }
   body h2 {
     font-family: "Dancing Script", cursive;
@@ -427,6 +416,7 @@
   body main .derecha {
     background-color: #F2A5AA;
     text-align: center;
+    margin-bottom: 2rem;
   }
   body main .derecha img {
     border: 3px solid floralwhite;
@@ -435,6 +425,7 @@
   body main .izquierda {
     background-color: #F2A5AA;
     margin-top: 1rem;
+    margin-bottom: 2rem;
   }
   body main .izquierda img {
     border: 3px solid floralwhite;
@@ -446,7 +437,7 @@
   body main .galeria {
     grid-template-columns: 1fr;
   }
-  body main .galeria-foto-uno {
+  body main .galeria .galeria-foto-uno {
     grid-column: 1/2;
   }
   body main .galeria .galeria-foto-dos {
@@ -475,7 +466,7 @@
     align-items: center;
     border: 3px solid floralwhite;
     background-color: #F2A5AA;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
   body main .eventos p {
     width: 95%;
@@ -493,35 +484,51 @@
   body main section form label {
     margin: 1rem 0rem 0.2rem 0rem;
   }
-  footer {
+  body .parallax {
+    background-color: #FBB7C0;
+    padding-bottom: 0.5rem;
+  }
+  body .parallax .articulo div img {
+    display: none;
+  }
+  body .parallax .articulo div iframe {
+    margin-top: 1rem;
+    border-radius: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  body .parallax .articulo p {
+    width: 100%;
+  }
+  body footer {
     background-color: #FF9CCC;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
   }
-  footer p {
+  body footer p {
     font-size: 1rem;
     margin-left: 2px;
     margin-top: 1.1rem;
   }
-  footer svg {
+  body footer svg {
     width: 20px;
     height: 20px;
     margin-left: 3rem;
   }
-  footer .logo-pie {
+  body footer .logo-pie {
     display: flex;
     align-items: center;
   }
-  footer .logo {
+  body footer .logo {
     width: 50px;
     height: 50px;
   }
-  footer nav a {
+  body footer nav a {
     display: none;
   }
-  footer div .bi-instagram {
+  body footer div .bi-instagram {
     position: fixed;
     width: 40px;
     height: 40px;
@@ -533,7 +540,7 @@
     border-radius: 13px;
     text-align: center;
   }
-  footer div .bi-whatsapp {
+  body footer div .bi-whatsapp {
     position: fixed;
     width: 40px;
     height: 40px;
@@ -547,10 +554,6 @@
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  body article {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-  }
   body header nav ul {
     display: none;
   }
@@ -580,36 +583,9 @@
   body header nav div ul .bi-calendar-date {
     margin-left: 0.4rem;
   }
-  body .parallax {
-    background-color: #FBB7C0;
-  }
-  body .parallax .articulo {
-    display: flex;
-    flex-direction: row;
-  }
-  body .parallax .articulo div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  body .parallax .articulo div img {
-    width: 1200px;
-    border: 2px solid floralwhite;
-    margin-top: 5rem;
-    margin-left: 2rem;
-  }
-  body .parallax .articulo div iframe {
-    margin-top: 1rem;
-    border-radius: 1rem;
-    width: 100%;
-    margin-bottom: 2rem;
-    margin-left: 2rem;
-  }
-  body .parallax .articulo div p {
-    width: 100%;
-  }
-  body .parallax .articulo div h2 {
-    font-size: 5rem;
+  body article {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
   body h2 {
     font-family: "Dancing Script", cursive;
@@ -673,7 +649,7 @@
     justify-content: center;
     align-items: center;
     background-color: #F2A5AA;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
   }
   body main .derecha img {
     width: 30%;
@@ -695,7 +671,7 @@
     justify-content: center;
     align-items: center;
     background-color: #F2A5AA;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
   }
   body main .izquierda img {
     width: 30%;
@@ -777,23 +753,54 @@
   body main section form label {
     margin: 1rem 0rem 0.2rem 0rem;
   }
-  footer {
+  body .parallax {
+    background-color: #FBB7C0;
+  }
+  body .parallax .articulo {
+    display: flex;
+    flex-direction: row;
+  }
+  body .parallax .articulo div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .parallax .articulo div img {
+    width: 1200px;
+    border: 2px solid floralwhite;
+    margin-top: 5rem;
+    margin-left: 2rem;
+  }
+  body .parallax .articulo div iframe {
+    margin-top: 1rem;
+    border-radius: 1rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+  }
+  body .parallax .articulo div p {
+    width: 100%;
+  }
+  body .parallax .articulo div h2 {
+    font-size: 5rem;
+  }
+  body footer {
     background-color: #FF9CCC;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
   }
-  footer .logo-pie {
+  body footer .logo-pie {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  footer .logo {
+  body footer .logo {
     width: 100px;
     height: 100px;
   }
-  footer div .bi-instagram {
+  body footer div .bi-instagram {
     position: fixed;
     width: 40px;
     height: 40px;
@@ -805,7 +812,7 @@
     border-radius: 13px;
     text-align: center;
   }
-  footer div .bi-whatsapp {
+  body footer div .bi-whatsapp {
     position: fixed;
     width: 40px;
     height: 40px;
@@ -817,7 +824,7 @@
     border-radius: 50px;
     text-align: center;
   }
-  footer div p {
+  body footer div p {
     font-size: 3rem;
     margin-left: 2px;
     margin-top: 1.5rem;
@@ -826,7 +833,7 @@
     font-weight: 500;
     font-style: normal;
   }
-  footer nav a {
+  body footer nav a {
     margin-right: 6rem;
     color: black;
     font-size: 2rem;
