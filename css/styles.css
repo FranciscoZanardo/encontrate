@@ -32,7 +32,6 @@
     margin-right: 0.3rem;
   }
   body header nav ul li a:hover {
-    text-decoration: none;
     color: floralwhite;
   }
   body header nav ul li .bi-cup-hot {
